@@ -10,7 +10,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.center}>
 
-      <ProductList  text='BAssam' number={10}/>
+      <ProductList text="hello" number={123} />
       
       </div>
     </main>

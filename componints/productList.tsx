@@ -1,9 +1,9 @@
-type Product = {
-    text: string;
-    number: number;
+type ProductPrams = {
+    text?: string;
+    number?: number;
 }
 
-function ProductList(props: Product){
+function ProductList({text, number}: ProductPrams){
     return (
         <>
         <ul>
@@ -12,8 +12,8 @@ function ProductList(props: Product){
             <li>Galaxy</li>
             <li>Blackberry</li>
             <li>Apple</li>
-            <li>{props.text}</li>
-            <li>{props.number}</li>
+            <li>{text}</li>
+            <li>{number}</li>
         </ul>
         </>
     )
